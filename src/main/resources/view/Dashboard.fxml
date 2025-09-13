@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="416.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.ecom.controller.DashboardController">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backgroundimage2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="30.0" text="DashBoard" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnItemMananegement" layoutX="332.0" layoutY="130.0" onAction="#btnItemMananegementOnAction" prefHeight="66.0" prefWidth="254.0" style="-fx-background-color: #7e7272;" text="Item Management" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCustomerMananegement" layoutX="47.0" layoutY="130.0" onAction="#btnCustomerMananegementOnAction" prefHeight="66.0" prefWidth="254.0" style="-fx-background-color: #7e7272;" text="Customer Management" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrderMananegement" layoutX="47.0" layoutY="222.0" onAction="#btnOrderMananegementOnAction" prefHeight="66.0" prefWidth="254.0" style="-fx-background-color: #7e7272;" text="Order Management" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrderDetailMananegement" layoutX="332.0" layoutY="222.0" onAction="#btnOrderDetailMananegementOnAction" prefHeight="66.0" prefWidth="254.0" style="-fx-background-color: #7e7272;" text="Order Detail Management" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="463.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.ecom.controller.customerController.CustomerManagementFormController">
+   <children>
+      <Label layoutX="246.0" layoutY="36.0" prefHeight="38.0" prefWidth="318.0" text="Customer Management">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
