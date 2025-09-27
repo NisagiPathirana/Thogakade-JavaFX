@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>19</version>
+            <version>24.0.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
