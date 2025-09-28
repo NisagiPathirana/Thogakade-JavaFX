@@ -7,102 +7,108 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="615.0" prefWidth="1221.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.ecom.controller.customerController.CustomerManagementFormController">
+<AnchorPane prefHeight="623.0" prefWidth="1353.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.ecom.controller.customerController.CustomerManagementFormController">
    <children>
-      <Label layoutX="43.0" layoutY="27.0" prefHeight="38.0" prefWidth="318.0" text="Customer Management">
+      <ImageView fitHeight="671.0" fitWidth="949.0" layoutX="-14.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backgroundimage2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="43.0" layoutY="27.0" prefHeight="38.0" prefWidth="318.0" text="Customer Management" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="43.0" layoutY="100.0" prefHeight="18.0" prefWidth="94.0" text="Customer ID">
+      <Label layoutX="43.0" layoutY="100.0" prefHeight="18.0" prefWidth="94.0" text="Customer ID" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtCustomerId" layoutX="145.0" layoutY="96.0" prefHeight="26.0" prefWidth="175.0" />
-      <Label layoutX="42.0" layoutY="149.0" prefHeight="18.0" prefWidth="102.0" text="Title">
+      <JFXTextField fx:id="txtCustomerId" focusColor="WHITE" layoutX="145.0" layoutY="96.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <Label layoutX="42.0" layoutY="149.0" prefHeight="18.0" prefWidth="102.0" text="Title" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtName" layoutX="145.0" layoutY="182.0" prefHeight="26.0" prefWidth="175.0" />
-      <Label layoutX="44.0" layoutY="196.0" prefHeight="18.0" prefWidth="117.0" text="Name">
+      <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="145.0" layoutY="182.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <Label layoutX="44.0" layoutY="196.0" prefHeight="18.0" prefWidth="117.0" text="Name" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="247.0" prefHeight="18.0" prefWidth="117.0" text="Date of Birth">
+      <Label layoutX="42.0" layoutY="247.0" prefHeight="18.0" prefWidth="117.0" text="Date of Birth" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="43.0" layoutY="292.0" prefHeight="18.0" prefWidth="117.0" text="Salary">
+      <Label layoutX="43.0" layoutY="292.0" prefHeight="18.0" prefWidth="117.0" text="Salary" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="336.0" prefHeight="18.0" prefWidth="117.0" text="Address">
+      <Label layoutX="42.0" layoutY="336.0" prefHeight="18.0" prefWidth="117.0" text="Address" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="381.0" prefHeight="18.0" prefWidth="117.0" text="City">
+      <Label layoutX="44.0" layoutY="381.0" prefHeight="18.0" prefWidth="117.0" text="City" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="425.0" prefHeight="18.0" prefWidth="117.0" text="Province">
+      <Label layoutX="44.0" layoutY="425.0" prefHeight="18.0" prefWidth="117.0" text="Province" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="474.0" prefHeight="18.0" prefWidth="117.0" text="Postal Code">
+      <Label layoutX="42.0" layoutY="474.0" prefHeight="18.0" prefWidth="117.0" text="Postal Code" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="comboTitle" layoutX="145.0" layoutY="140.0" prefHeight="26.0" prefWidth="175.0" />
-      <JFXTextField fx:id="txtSalary" layoutX="144.0" layoutY="280.0" prefHeight="26.0" prefWidth="175.0" />
+      <JFXComboBox fx:id="comboTitle" focusColor="WHITE" layoutX="145.0" layoutY="140.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtSalary" focusColor="WHITE" layoutX="144.0" layoutY="280.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
       <DatePicker fx:id="dateDOB" layoutX="145.0" layoutY="243.0" />
-      <JFXTextField fx:id="txtAddress" layoutX="144.0" layoutY="328.0" prefHeight="26.0" prefWidth="175.0" />
-      <JFXTextField fx:id="txtCity" layoutX="144.0" layoutY="374.0" prefHeight="26.0" prefWidth="175.0" />
-      <JFXComboBox fx:id="comboProvince" layoutX="145.0" layoutY="421.0" prefHeight="26.0" prefWidth="175.0" />
-      <JFXTextField fx:id="txtPostalCode" layoutX="144.0" layoutY="468.0" prefHeight="26.0" prefWidth="175.0" />
-      <JFXButton fx:id="btnAdd" layoutX="82.0" layoutY="545.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="ADD">
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" layoutX="144.0" layoutY="328.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCity" focusColor="WHITE" layoutX="144.0" layoutY="374.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <JFXComboBox fx:id="comboProvince" focusColor="WHITE" layoutX="145.0" layoutY="421.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtPostalCode" focusColor="WHITE" layoutX="144.0" layoutY="468.0" prefHeight="26.0" prefWidth="175.0" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnAdd" layoutX="82.0" layoutY="545.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #4682B4;" text="ADD" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnUpdate" layoutX="216.0" layoutY="545.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="UPDATE">
+      <JFXButton fx:id="btnUpdate" layoutX="216.0" layoutY="545.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #4682B4;" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnDelete" layoutX="344.0" layoutY="545.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="DELETE">
+      <JFXButton fx:id="btnDelete" layoutX="344.0" layoutY="545.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #4682B4;" text="DELETE" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnClear" layoutX="467.0" layoutY="545.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="CLEAR">
+      <JFXButton fx:id="btnClear" layoutX="467.0" layoutY="545.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #4682B4;" text="CLEAR" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="17.0" />
          </font>
       </JFXButton>
       <TableView layoutX="395.0" layoutY="82.0" prefHeight="438.0" prefWidth="789.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Customer ID" />
-          <TableColumn prefWidth="45.599945068359375" text="Title" />
-            <TableColumn prefWidth="105.5999755859375" text="Name" />
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Customer ID" />
+          <TableColumn prefWidth="52.79998779296875" text="Title" />
+            <TableColumn prefWidth="98.4000244140625" text="Name" />
             <TableColumn prefWidth="75.0" text="DOB" />
             <TableColumn prefWidth="85.5999755859375" text="Salary" />
-            <TableColumn prefWidth="94.4000244140625" text="Address" />
-            <TableColumn prefWidth="101.5999755859375" text="City" />
-            <TableColumn prefWidth="101.5999755859375" text="Province" />
-            <TableColumn prefWidth="104.7999267578125" text="Postal Code" />
+            <TableColumn prefWidth="120.79998779296875" text="Address" />
+            <TableColumn prefWidth="76.00006103515625" text="City" />
+            <TableColumn prefWidth="125.5999755859375" text="Province" />
+            <TableColumn prefWidth="80.800048828125" text="Postal Code" />
         </columns>
       </TableView>
    </children>

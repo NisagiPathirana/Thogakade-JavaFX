@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.icet.ecom.controller.itemController.ItemManagementFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="610.0" prefWidth="1137.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.ecom.controller.itemController.ItemManagementFormController">
+   <children>
+      <Label layoutX="53.0" layoutY="37.0" prefHeight="38.0" prefWidth="318.0" text="Item Management">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="112.0" prefHeight="18.0" prefWidth="94.0" text="Item Code">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemCode" layoutX="155.0" layoutY="106.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="49.0" layoutY="169.0" prefHeight="18.0" prefWidth="102.0" text="Description">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPackSize" layoutX="156.0" layoutY="221.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="52.0" layoutY="230.0" prefHeight="18.0" prefWidth="117.0" text="Pack Size">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="291.0" prefHeight="18.0" prefWidth="117.0" text="Unit Price">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="346.0" prefHeight="18.0" prefWidth="117.0" text="Qty on Hand">
+         <font>
+            <Font name="Berlin Sans FB" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUnitPrice" layoutX="156.0" layoutY="278.0" prefHeight="26.0" prefWidth="175.0" />
+      <JFXTextField fx:id="txtQtyonHand" layoutX="157.0" layoutY="336.0" prefHeight="26.0" prefWidth="175.0" />
+      <JFXButton fx:id="btnAdd" layoutX="92.0" layoutY="555.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="ADD">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="226.0" layoutY="555.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="UPDATE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="354.0" layoutY="555.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="DELETE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="477.0" layoutY="555.0" onAction="#btnClearOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: DARKGREY;" text="CLEAR">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="405.0" layoutY="98.0" prefHeight="422.0" prefWidth="698.0">
+         <columns>
+            <TableColumn prefWidth="84.79998779296875" text="Item Code" />
+            <TableColumn prefWidth="297.5999755859375" text="Description" />
+            <TableColumn prefWidth="88.00006103515625" text="PackSize" />
+            <TableColumn prefWidth="118.40008544921875" text="Unit Price" />
+            <TableColumn prefWidth="109.60015869140625" text="Qty on Hand" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtDescription" layoutX="155.0" layoutY="165.0" prefHeight="26.0" prefWidth="175.0" />
+   </children>
 </AnchorPane>
